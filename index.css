@@ -1,0 +1,360 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+box-sizing: border-box;
+}
+/*
+2. Remove default margin
+*/
+* {
+margin: 0;
+}
+/*
+Typographic tweaks!
+3. Add accessible line-height
+4. Improve text rendering
+*/
+body {
+line-height: 1.5;
+-webkit-font-smoothing: antialiased;
+}
+/*
+5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+display: block;
+max-width: 100%;
+}
+/*
+6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+font: inherit;
+}
+/*
+7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+overflow-wrap: break-word;
+}
+/*
+8. Create a root stacking context
+*/
+#root, #__next {
+isolation: isolate;
+}
+
+
+/*
+====================================================
+
+Mobile Design
+
+====================================================
+*/
+
+@font-face {
+    font-family: Brown1;
+    src: url('/assets/Brown-Font/Brown Bold.ttf') ;
+    format: trueface;
+
+    src: url('/assets/Brown-Font/BrownExtraBold Regular.ttf') ;
+    format: trueface;
+
+    src: url('/assets/Brown-Font/Brown Bold.ttf') ;
+    format: trueface;
+
+    src: url('/assets/Brown-Font/BrownHeavy Regular.ttf') ;
+    format: trueface;  
+
+    src: url('/assets/Brown-Font/BrownLight Regular.ttf') ;
+    format: trueface;
+
+    src: url('/assets/Brown-Font/BrownMedium Regular.ttf') ;
+    format: trueface;
+    
+    src: url('/assets/Brown-Font/BrownLight Regular.ttf') ;
+    format: trueface;
+}
+
+@font-face {
+    font-family: sofia;
+    src: url('/assets/sofiapro-light.otf');
+    format: trueface;
+}
+
+
+
+body div{
+    padding: 30px 24px 0;
+    background-color: #F7FDFC;
+    max-width: 375px;
+}
+
+body > *{
+    width: fit-content;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+
+section > img:nth-child(1){
+    width: 38.67px;
+    height: 40px;
+
+}
+
+section > img:nth-child(2){
+    display: none;
+
+}
+
+h2{
+    margin-top: 40px;
+    margin-bottom: 12px;
+    font-family: Brown1;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: -0.800000011920929px;
+    text-align: left;
+    color: #000B0A;
+    font-size: 700;
+}
+
+h2 + p, .hide {
+    font-family: Brown1;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #737373;
+    margin-bottom: 40px;
+    word-spacing: 0.05em;
+}
+
+.hide {
+    display: none;
+}
+
+fieldset{
+    padding: 24px 16px 30px;
+    border: 0;
+    border-radius: 6px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 50px 0px #0408131A;
+
+}
+
+label{
+    display: block;
+    font-family: Sofia;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+input, select{
+    width: 100%;
+    display: block;
+    font-family: Sofia;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    margin-bottom: 24px;
+    padding: 14px 16px;
+    border: 1px solid #f5f5f5;
+}
+
+button{
+    font-family: Sofia;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    background-color: #2EC4B6;
+    width: 100%;
+    padding: 16px 0;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+}
+
+a {
+    color: #2EC4B6;
+}
+
+select{
+    color:#737373;
+    
+}
+
+form  + p{
+    text-align: center;
+    padding: 24px 0 64px 0;
+    font-family: Sofia;
+    font-size: 14px;
+
+}
+
+fieldset div{
+    padding: 0;
+    background-color: initial;
+}
+
+.font-icon { 
+    position: relative; 
+} 
+  
+.font-icon i{ 
+    position: absolute; 
+    top: 40px; 
+    left: 87%;
+    color: gray; 
+} 
+
+
+
+/*
+====================================================
+
+Desktop Design
+
+====================================================
+*/
+
+@media screen and (width > 375px) {
+    body{
+        width: 100%;
+    }
+
+    body > div{
+        width: 100%;
+        padding: 20px;
+        max-width: unset;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        padding: 81px 0;
+    }
+
+    div section:nth-child(1){
+        width: 32%;
+    }
+
+    div section:nth-child(2){
+        width: 40.27%;
+    }
+
+    h2{
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 50px;
+
+    }
+    
+    h2 + p {
+        display: none;
+    }
+
+    .hide {
+        display: block;
+        font-weight: 400;
+
+    }
+
+    section > img:nth-child(1){
+        display: none;
+    
+    }
+
+    section > img:nth-child(2){
+        display: block;
+        width: 77px;
+        height: 77px;
+    
+    }
+
+    fieldset {
+        width: 100%;
+        padding: 40px;
+        & div{
+            padding: 0;
+            display: inline-block;
+            width: fit-content;
+            background-color: initial;
+        }
+    }
+
+    fieldset{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        padding-bottom: 0;
+    
+    }
+
+    label{
+        margin-bottom: 10px;
+    }
+    
+    input, select{
+        width: 100%;
+        display: block;
+        font-family: Sofia;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+        margin-bottom: 30px;
+        padding: 14px 16px;
+        border: 1px solid #f5f5f5;
+    }
+    
+
+    fieldset div{
+        width: 100%;
+    }
+
+    fieldset div:nth-child(odd){
+        margin-right: 14px;
+    }
+        
+
+    form  + p{
+        background-color: white;
+        width: 100%;
+        padding: 16px 40px 40px ;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    .font-icon i{ 
+        left: 80%; 
+    } 
+}
+
+
+@media screen and (width > 767px ) {
+    
+    fieldset div{
+        width: 45%;
+    }
+
+    .font-icon i{ 
+        left: 87%; 
+    } 
+}
