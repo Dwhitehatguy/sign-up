@@ -58,22 +58,41 @@ Mobile Design
     font-family: Brown1;
     src: url('/assets/Brown-Font/Brown Bold.ttf') ;
     format: trueface;
+}
+
+@font-face {
+    font-family: Brown1;
 
     src: url('/assets/Brown-Font/BrownExtraBold Regular.ttf') ;
     format: trueface;
+}
 
+@font-face {
+    font-family: Brown1;
     src: url('/assets/Brown-Font/Brown Bold.ttf') ;
     format: trueface;
+}
 
+@font-face {
+    font-family: Brown1;
     src: url('/assets/Brown-Font/BrownHeavy Regular.ttf') ;
-    format: trueface;  
+    format: trueface; 
+}
 
+@font-face {
+    font-family: Brown1; 
     src: url('/assets/Brown-Font/BrownLight Regular.ttf') ;
     format: trueface;
+}
 
+@font-face {
+    font-family: Brown1;
     src: url('/assets/Brown-Font/BrownMedium Regular.ttf') ;
     format: trueface;
-    
+}
+
+@font-face {
+    font-family: Brown1;
     src: url('/assets/Brown-Font/BrownLight Regular.ttf') ;
     format: trueface;
 }
