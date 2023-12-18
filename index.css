@@ -56,50 +56,50 @@ Mobile Design
 
 @font-face {
     font-family: Brown1-font;
-    src: url('assets/Brown-Font/Brown Bold.ttf') ;
+    src: url('./assets/Brown-Font/Brown Bold.ttf') ;
     format: trueface;
 }
 
 @font-face {
     font-family: Brown1-font;
 
-    src: url('assets/Brown-Font/BrownExtraBold Regular.ttf') ;
+    src: url('./assets/Brown-Font/BrownExtraBold Regular.ttf') ;
     format: trueface;
 }
 
 @font-face {
     font-family: Brown1-font;
-    src: url('assets/Brown-Font/Brown Bold.ttf') ;
+    src: url('./assets/Brown-Font/Brown Bold.ttf') ;
     format: trueface;
 }
 
 @font-face {
     font-family: Brown1-font;
-    src: url('assets/Brown-Font/BrownHeavy Regular.ttf') ;
+    src: url('./assets/Brown-Font/BrownHeavy Regular.ttf') ;
     format: trueface; 
 }
 
 @font-face {
     font-family: Brown1-font; 
-    src: url('assets/Brown-Font/BrownLight Regular.ttf') ;
+    src: url('./assets/Brown-Font/BrownLight Regular.ttf') ;
     format: trueface;
 }
 
 @font-face {
     font-family: Brown1-font;
-    src: url('assets/Brown-Font/BrownMedium Regular.ttf') ;
+    src: url('./assets/Brown-Font/BrownMedium Regular.ttf') ;
     format: trueface;
 }
 
 @font-face {
     font-family: Brown1-font;
-    src: url('assets/Brown-Font/BrownLight Regular.ttf') ;
+    src: url('./assets/Brown-Font/BrownLight Regular.ttf') ;
     format: trueface;
 }
 
 @font-face {
     font-family: sofia;
-    src: url('assets/sofiapro-light.otf');
+    src: url('./assets/sofiapro-light.otf');
     format: trueface;
 }
 
